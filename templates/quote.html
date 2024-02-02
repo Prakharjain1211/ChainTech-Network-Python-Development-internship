@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+   
+    
+
+    <table class="table mt-4">
+        <thead>
+          <tr>
+            <th scope="col"> <h1>Quote of the day</h1></th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+                  <tr>
+            <th scope="row"><p>{{ random_quote }}</p></th>
+        
+          </tr>
+        </tbody>
+      </table>
+{% endblock  %}

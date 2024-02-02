@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>All Submissions</h2>
+
+    <ul>
+        {% for submission in submissions %}
+            <li>
+                <strong>Name:</strong> {{ submission.name }}<br>
+                <strong>Email:</strong> {{ submission.email }}<br>
+                <strong>Message:</strong> {{ submission.message }}
+            </li>
+            <br>
+        {% endfor %}
+    </ul>
+{% endblock %}
+    
+

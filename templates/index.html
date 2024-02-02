@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+    <h1>Welcome to my website!</h1>
+    
+    <p>The current time is {{ current_time }}</p>
+
+    <form action="{% url 'quote' %}">
+        <button type="submit" class="btn btn-info   mb-3">Generate Random Quote</button>
+    </form>
+
+    
+    <form action="{% url 'form_submission' %}">
+        <button  class="btn btn-primary mb-3" type="submit">Submit A Form</button>
+    </form>
+
+    <form action="{% url 'submission_list' %}">
+        <button  class="btn btn-primary" type="submit">View All Submitted Forms</button>
+    </form>
+
+
+
+{% endblock  %}
+    
+
